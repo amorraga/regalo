@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navegador{
+    background:#1f2124;
+    height: 35px;
+}
+
+ul {
+    list-style: none;
+}
+li{
+    margin: 7px 7px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+li :hover {
+    color: #dde7ff;
+    transition: 0.4s all ease;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.recuerdo {
+    float: right;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.portada {
+    margin:2px auto;
+    border-radius:5px;
+    border: 1px solid #746868;
+    padding:13px;
+    width:75%;
+    height:500px;
+}
+
+.imgPortada{
+    width:100%;
+    height:400px;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+button {
+    background-color: white;
+    margin:5px auto;
+    border-radius:10px;
+    border: 1.5px solid black;
+    width: 130px;
+    height:40px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#modal {
+    position: fixed;
+    top: 11%;
+    left: 25%;
+    background: rgba(33, 41, 52, .85);
+    border-radius:10px;
+    border: 1.5px solid black;
+    z-index:1002;
+    overflow: auto;
+}
+
+.tituloModal {
+    color: white;
+}
+
+.juntos {
+    margin: 50px 0;
+    background-color: black;
+    color: #111;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.juntos > span {
+    animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%, 100% {
+        color: white;
+        text-shadow: 0 0 12px rgb(255, 27, 240), 0 0 50px rgb(255, 27, 240), 
+        0 0 100px rgb(255, 27, 240);
+    }
+
+    10%, 90% {
+        color:#111;
+        text-shadow: none;
+    }
+}
+
+.juntos > span:nth-child(2) {
+    animation-delay: 0s;
+}
+.juntos > span:nth-child(3) {
+    animation-delay: 0s;
+}
+.juntos > span:nth-child(4) {
+    animation-delay: 0.60s;
+}
+.juntos > span:nth-child(5) {
+    animation-delay: 0.60s;
+}
+.juntos > span:nth-child(6) {
+    animation-delay: 1.20s;
+}
+.juntos > span:nth-child(7) {
+    animation-delay: 1.20s;
+}
+.juntos > span:nth-child(8) {
+    animation-delay: 1.20s;
+}
+.juntos > span:nth-child(9) {
+    animation-delay: 1.80s;
+}
+
+.galeria {
+    display: flex;
+    width: 100%;
+    height: 395px;
+    gap: 0.5rem;
+    margin: 10px 0;
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    border-radius: 1rem;
+}
+
+.galeria img:hover {
+    flex: 9;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 165px;
+}
+
+footer p{
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sobreMi{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer{
+    padding: 8px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.icono { 
+    text-align: center;
+    position:relative;
+}
+
+.icono img {
+    padding:8px;
+    width: 20px;
+    height: 20px;
+}
+
+.icono img:hover{ 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+
+#tituloRecuerdo {
+    padding: 10px;
+    text-align: center;
+}
+
+.textDedicado {
+    margin: 20px;
+    border: #b5b5b5 5px double;
+    border-top-left-radius: 20px;
+    border-radius: 20px;
+}
+
+.textDedicado p{
+    margin: 20px;
+}
+
+@media (max-width: 768px){
+    .navegador{
+        height: 30px;
+    }
+
+    li {
+        margin: 6px 6px;
+        color: white;
+        font-size: 15px;
+    }
+    .textPortada {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 120px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    #modal {
+        width: 150px;
+        height: 165px;
+        top: 25%;
+        left: 22%;
+    }
+
+    .imgFeliz{
+        width: 100px;
+        height: 96px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    .juntos {
+        margin: 30px 0;
+        height: 20vh;
+        font-size: 3.5rem;
+    }
+
+    .galeria {
+        height: 250px;
+        gap: 0.3rem;
+    }
+    
+    .galeria img {
+        border-radius: 0.5rem;
+    }
+
+    footer {
+        height: 165px;/**/
+    }
+    
+    footer p{
+        font-size: 10px;
+    }
+    
+    .sobreMi{
+        font-size: 12px;
+    }
+    
+    .footer{
+        font-size: 10px;
+    }
+    
+    .icono img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .textDedicado p{
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .textDedicado{
+        margin: 10px;
+    }
+}
