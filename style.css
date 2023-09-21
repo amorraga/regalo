@@ -5,7 +5,7 @@
 
 .navegador{
     background:#1f2124;
-    height: 50px;
+    height: 60px;
 }
 
 ul {
@@ -16,7 +16,7 @@ li{
     display: inline-block;
     position: relative;
     color: white;
-    font-size: 22px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -155,7 +155,7 @@ button {
 .galeria {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 500px;
     gap: 0.5rem;
     margin: 10px 0;
 }
@@ -214,7 +214,7 @@ footer p{
 }
 
 #tituloRecuerdo {
-    padding: 16px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -229,7 +229,7 @@ footer p{
     margin: 20px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     .navegador{
         height: 45px;
     }
