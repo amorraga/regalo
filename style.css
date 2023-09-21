@@ -229,7 +229,7 @@ footer p{
     margin: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     .navegador{
         height: 30px;
     }
