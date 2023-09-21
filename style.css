@@ -5,7 +5,7 @@
 
 .navegador{
     background:#1f2124;
-    height: 35px;
+    height: 45px;
 }
 
 ul {
@@ -107,7 +107,7 @@ button {
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 8rem;
 }
 
 .juntos > span {
@@ -155,7 +155,7 @@ button {
 .galeria {
     display: flex;
     width: 100%;
-    height: 395px;
+    height: 495px;
     gap: 0.5rem;
     margin: 10px 0;
 }
