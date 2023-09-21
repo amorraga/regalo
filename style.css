@@ -5,7 +5,7 @@
 
 .navegador{
     background:#1f2124;
-    height: 45px;
+    height: 50px;
 }
 
 ul {
@@ -16,7 +16,7 @@ li{
     display: inline-block;
     position: relative;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -48,7 +48,7 @@ li:hover::after {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
 }
 
@@ -57,13 +57,13 @@ h1 {
     border-radius:5px;
     border: 1px solid #746868;
     padding:13px;
-    width:75%;
-    height:500px;
+    width:70%;
+    height:500%;
 }
 
 .imgPortada{
     width:100%;
-    height:400px;
+    height:400%;
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -71,7 +71,7 @@ h1 {
 button {
     background-color: white;
     margin:5px auto;
-    border-radius:10px;
+    border-radius:15px;
     border: 1.5px solid black;
     width: 130px;
     height:40px;
@@ -84,8 +84,8 @@ button {
 
 #modal {
     position: fixed;
-    top: 11%;
-    left: 25%;
+    top: 15%;
+    left: 28%;
     background: rgba(33, 41, 52, .85);
     border-radius:10px;
     border: 1.5px solid black;
@@ -107,7 +107,7 @@ button {
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 12rem;
 }
 
 .juntos > span {
@@ -155,7 +155,7 @@ button {
 .galeria {
     display: flex;
     width: 100%;
-    height: 495px;
+    height: 400px;
     gap: 0.5rem;
     margin: 10px 0;
 }
@@ -177,24 +177,24 @@ footer {
     color: white;
     background-color: black;
     width: 100%;
-    height: 165px;
+    height: 175px;
 }
 
 footer p{
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
 .sobreMi{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .footer{
     padding: 8px;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .icono { 
@@ -214,7 +214,7 @@ footer p{
 }
 
 #tituloRecuerdo {
-    padding: 10px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -222,47 +222,45 @@ footer p{
     margin: 20px;
     border: #b5b5b5 5px double;
     border-top-left-radius: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .textDedicado p{
     margin: 20px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .navegador{
-        height: 30px;
+        height: 45px;
     }
 
     li {
         margin: 6px 6px;
         color: white;
-        font-size: 15px;
+        font-size: 18px;
     }
     .textPortada {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     button {
         width: 120px;
-        height: 30px;
-        font-size: 18px;
+        height: 38px;
+        font-size: 20px;
     }
     
     #modal {
         width: 150px;
         height: 165px;
-        top: 25%;
-        left: 22%;
     }
 
     .imgFeliz{
-        width: 100px;
-        height: 96px;
+        width: 120px;
+        height: 100px;
     }
 
     h2{
@@ -272,7 +270,7 @@ footer p{
     .juntos {
         margin: 30px 0;
         height: 20vh;
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .galeria {
